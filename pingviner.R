@@ -1,7 +1,7 @@
 library(tidyverse)
 library(palmerpenguins)
 
-
+pingvin_data <- penguins
 
 island_plot <- ggplot(data = pingvin_data, aes(x = body_mass_g, y = bill_length_mm, colour = island)) +
   geom_point() +
