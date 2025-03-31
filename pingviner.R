@@ -3,5 +3,11 @@ library(palmerpenguins)
 
 
 
-ggplot(data = pingvin_data, aes(x = body_mass_g, y = bill_length_mm, colour = species)) +
+island_plot <- ggplot(data = pingvin_data, aes(x = body_mass_g, y = bill_length_mm, colour = island)) +
   geom_point()
+
+species_plot <- ggplot(data = pingvin_data, aes(x = body_mass_g, y = bill_length_mm, colour = species)) +
+         geom_point()
+
+island_plot
+species_plot
