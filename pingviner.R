@@ -7,7 +7,7 @@ island_plot <- ggplot(data = pingvin_data, aes(x = body_mass_g, y = bill_length_
   geom_point() +
   geom_line()
 
-species_plot <- ggplot(data = pingvin_data, aes(x = body_mass_g, y = bill_length_mm, colour = species)) +
+species_plot_correct <- ggplot(data = pingvin_data, aes(x = body_mass_g, y = bill_length_mm, colour = species)) +
          geom_point() +
   geom_line()
 
